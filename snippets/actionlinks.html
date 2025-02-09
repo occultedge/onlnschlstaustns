@@ -14,72 +14,61 @@
             background: linear-gradient(120deg, #ffeb3b, #ff9800);
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
             height: 100vh;
-            overflow: hidden;
             position: relative;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #ff4081;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 0 10px;
+            transition: background 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background: #e91e63;
+            border-radius: 5px;
         }
 
         .title {
-            font-size: 24px;
+            font-size: 28px;
             color: #fff;
             text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-            margin-bottom: 10px;
-        }
-
-        .action-links {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            width: 100%;
-            max-width: 500px;
-        }
-
-        a {
-            text-decoration: none;
-            color: white;
-            background-color: #ff4081;
-            padding: 14px 24px;
-            border-radius: 50px;
-            font-size: 16px;
-            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease, background-color 0.3s ease;
+            margin-top: 20px;
             text-align: center;
-            display: inline-block;
-            animation: bounce 2s infinite alternate;
-            position: relative;
         }
 
-        a:hover {
-            background-color: #e91e63;
-            transform: scale(1.1);
-        }
-
-        @keyframes bounce {
-            0% { transform: translateY(0px); }
-            100% { transform: translateY(-8px); }
-        }
-
-        /* Responsive */
         @media (max-width: 900px) {
-            a {
-                font-size: 14px;
-                padding: 12px 20px;
-                width: 100%;
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar a {
+                font-size: 16px;
+                padding: 8px 15px;
             }
         }
     </style>
 </head>
 <body>
-    <h1 class="title">🎈 Let's Have Fun Learning! 🎉</h1>
-
-    <div class="action-links">
+    <div class="navbar">
         <a href="https://exam.net/student?code=fixwuM" target="_blank">📺 Take Mock Test</a>
         <a href="https://join.skype.com/x24U18bINJqB" target="_blank">📚 Attend Live Class</a>
         <a href="https://www.orionfr.co.in/copy-of-assignment-upload-form-page" target="_blank">✍️ Submit Homework</a>
         <a href="https://occultedge.github.io/surymhlsn1/" target="_blank">✍️ Learn Maths</a>
     </div>
+    <h1 class="title">🎈 Let's Have Fun Learning! 🎉</h1>
 </body>
 </html>
